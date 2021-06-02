@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/site.css">
+    <script src="https://kit.fontawesome.com/fc56aae322.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet"> 
+    <script src="JS/site.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>amakuti</title>
+    <link rel="icon" href="IMG/fav-icon.png">
+</head>
+<body>
+    <nav>
+        <div class="espaco_img_menu">
+            <img class="img_menu_mobile" src="IMG/logo-1.png" alt="Logo Courseup">
+            <img class="img_menu_tablet" src="IMG/logo-2.png" alt="Logo Courseup">
+            <img class="img_menu_desktop" src="IMG/logo-3.png" alt="Logo Courseup">
+        </div>
+        <div id="myNav" class="overlay"> 
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <ul class="menu">
+                    <li class="itens_menu">
+                        <a href="historia.html">Historia</a>
+                        <a href="products.html">Produtos</a>
+                        <a href="cadastro.html">Cadastro</a>
+                    </li>
+                </ul>    
+            </div>
+        </div>
+    </nav>
+    <span class="titulo_menu" onclick="openNav()"> Menu &nbsp;&#9776;</span>
+    <main>
+        <hr class="divisoria">
+        <section class="sessao_formulario">
+            <br>
+            <br>
+            <h1 class="titulo_form">Cadastre-se no nosso site!</h1>
+            <div class="formulario">
+                <form action="contato.html">
+                    <fieldset>
+                        <legend>Cadastro</legend>
+                        <label for="email">E-Mail</label>
+                        <input type="email" id="email" name="email" placeholder="email@email.com.br" autofocus required>
+                        <br>
+                        <br>
+                        <label for="senha">Digite sua senha</label>
+                        <input type="password" id="senha" name="senha" required>
+                        <br>
+                        <br>
+                        <label for="senha2">Repita sua senha</label>
+                        <input type="password" id="senha2" name="senha2" required>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>Dados Pessoais</legend>
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                        <br>
+                        <br>
+                        <label for="genero">Gênero</label>
+                        <br>
+                        <input type="radio" name="genero" value="cisFem"> Mulher Cis
+                        <input type="radio" name="genero" value="cisMasc"> Homem Cis
+                        <br>
+                        <input type="radio" name="genero" value="transFem"> Mulher Trans
+                        <input type="radio" name="genero" value="transMasc"> Homem Trans
+                        <br>
+                        <input type="radio" name="genero" value="agenero"> Agênero
+                        <input type="radio" name="genero" value="outro"> Outro
+                        <input type="radio" name="genero" value="prefNDecl"> Prefiro não declarar
+                        <br>
+                        <br>
+                        <label for="idade">Idade</label>
+                        <input type="number" name="idade" value="idade" placeholder="Sua idade">
+                    </fieldset>
+                    <br>
+                    <br>
+                    <input class="botao" type="submit" value="Enviar">
+                    <input class="botao" type="reset" value="Apagar">
+                </form>
+            </div>
+        </section>
+        <hr class="divisoria">
+    </main>
+    <footer>
+            <div class="barra_nome">
+                <!--@--> &copy; Amakuti 2021
+            </div>
+        </footer>           
+    </body>
+    <script src="JS/site.js"></script>
+
+    </html>
+
+
